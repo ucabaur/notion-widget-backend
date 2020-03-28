@@ -11,9 +11,9 @@ plugins:
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs12.x
   region: eu-west-2
-  stage: ${opt:stage, 'dev'}
+  stage: ${opt:stage, 'prod'}
   usagePlan:
     quota:
       limit: 5000
